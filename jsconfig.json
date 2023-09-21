@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "alwaysStrict": true,
+        "checkJs": true,
+        "esModuleInterop": true,
+        "lib": ["ES7", "ES5", "DOM"],
+        "moduleResolution": "nodenext",
+        "target": "ES5",
+        "resolveJsonModule": true,
+        "module": "NodeNext"
+    }
+}
