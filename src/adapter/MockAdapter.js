@@ -1,5 +1,5 @@
 import RTMMock from '../mocks/rtm.json' assert { type: 'json' };
-import MarketDetails from '../models/MarketDetails.js';
+import MarketDetails from '../models/api/MarketDetails.js';
 import MarketTicker from '../models/MarketTicker.js';
 import Wallet from '../models/Wallet.js';
 

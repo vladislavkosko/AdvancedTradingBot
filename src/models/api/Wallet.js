@@ -1,3 +1,5 @@
+import Asset from './Asset.js';
+
 export default class Wallet {
     constructor() {
         /** @private */
@@ -10,14 +12,30 @@ export default class Wallet {
      * @param {number?} frozen
      */
     add(currency, available, frozen = 0) {
-        this.assets.set(currency, { available, frozen });
+        this.assets.set(currency, new Asset(currency, available, frozen));
+
+        return this;
     }
 
     /**
      * @param {string} currency
-     * @returns {{available: number; frozen: number;}}
+     * @returns {Asset}
      */
     get(currency) {
         return this.assets.has(currency) ? this.assets.get(currency) : null;
+    }
+
+    /**
+     * @returns {string[]}
+     */
+    getOwnedCoins() {
+        return Array.from(this.assets.keys());
+    }
+
+    /**
+     * @returns {Asset[]}
+     */
+    getAllAssets() {
+        return this.getOwnedCoins().map(coin => this.get(coin));
     }
 }

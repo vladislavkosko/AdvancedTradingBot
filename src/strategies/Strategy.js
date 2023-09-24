@@ -1,4 +1,4 @@
-import MarketDetails from '../models/MarketDetails.js';
+import MarketDetails from '../models/api/MarketDetails.js';
 import Wallet from '../models/Wallet.js';
 import Calculator from '../utils/Calculator.js';
 

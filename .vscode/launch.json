@@ -21,6 +21,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/test.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Wallet Watcher",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/wallet.js"
         }
     ]
 }

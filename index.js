@@ -1,11 +1,12 @@
-import TradingBot from './bot.js';
+import TradingBot from './src/bot.js';
 import config from './config.json' assert { type: 'json' };
+
+process.stdin.resume();
+process.env.baseDir = process.cwd();
 
 const bot = new TradingBot(config);
 
 bot.trade();
-
-process.stdin.resume();
 
 function exitHandler(options) {
     if (options.exit) {

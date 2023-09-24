@@ -1,0 +1,5 @@
+# Glossarry:
+Market Trend: Bear, Bull
+Market Stage: Stable, Breakdown, Consolidation, Correction, U-turn
+
+# Theory
